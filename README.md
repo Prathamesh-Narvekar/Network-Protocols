@@ -18,19 +18,19 @@ A **network protocol** is a set of rules that govern data communication between 
 	- You can simulate ICMP easily in Packet Tracer with basic topology.
 
 ## ARP (ADRESS RESOLUTION PROTOCOL)
-**What Is ARP?**  
+### What Is ARP?
 ARP (Address Resolution Protocol) is used to map an IP address to a MAC address. It operates at the boundary of the Network Layer (Layer 3) and the Data Link Layer (Layer 2) of the OSI model.  
 
-**Why It Matters**  
+### Why It Matters
 When a device wants to send data to another device on the same network, it needs the destination’s MAC address. If it only knows the IP, it uses ARP to find the MAC.  
 
-**How ARP Works**
+### How ARP Works
 1. Host A wants to talk to Host B (knows IP, needs MAC).
 2. Host A sends an ARP Request: “Who has IP 192.168.1.2?”
 3. Host B replies with an ARP Reply: “192.168.1.2 is at MAC AA:BB:CC:DD:EE:FF.”
 4. Host A stores this in its ARP table and sends the data.
 
-**Cisco Packet Tracer Simulation: ARP Lab Setup**
+### Cisco Packet Tracer Simulation: ARP Lab Setup
 - Open Packet Tracer
 - Add two PCs and a switch
 - Connect PCs to switch with copper straight-through cables
@@ -43,16 +43,17 @@ When a device wants to send data to another device on the same network, it needs
    - On PC0 → Desktop → Command Prompt → Type: arp -a
    - You’ll see PC1’s IP mapped to its MAC address
 
-Visual Demo: [Click Here](https://www.youtube.com/watch?v=lOaoDLxKuYI).  
+**Visual Demo: [Click Here](https://www.youtube.com/watch?v=lOaoDLxKuYI).**
 
-**Key Takeaway**
+### Key Takeaway
 - ARP is essential for LAN communication — it bridges IP and MAC.
 - It uses broadcast for discovery, reply is unicast.
 - ARP tables cache mappings to avoid repeated request.
 - You can inspect ARP tables using arp -a in Packet Tracer.
 
 
-## IP (Internet Protocol) 
+## IP (INTERNET PROTOCOL) 
+### What is IP?
 IP (Internet Protocol) is responsible for addressing and routing packets between devices across networks. It ensures that data sent from one device reaches the correct destination.  
 **Key Concepts**
 - IP Address: A unique identifier for each device on a network (e.g., 192.168.1.1).
@@ -62,10 +63,10 @@ IP (Internet Protocol) is responsible for addressing and routing packets between
 - Routing: IP works with routers to forward packets across networks.
 - Connectionless: IP doesn’t guarantee delivery — it just sends packets.
 
-**Real-World Analogy**
+### Real-World Analogy
 Think of IP like a postal system. Each device has an address, and IP ensures the packet (letter) gets routed through various hubs (routers) to reach the destination.
 
-**Cisco Packet Tracer Simulation: IP Routing**
+### Cisco Packet Tracer Simulation: IP Routing
 - Open Packet Tracer
 - Add two routers, two switches, and four PCs (two per network)
 - Connect PCs to switches, switches to routers
@@ -86,9 +87,48 @@ Think of IP like a postal system. Each device has an address, and IP ensures the
 	- Assign IPv6 addresses to PCs and routers
 	- Use ping with IPv6 format
 
-**Key Takeaways**
+### Key Takeaways
 - IP is essential for identifying and locating devices on a network.
 - Routers use IP to forward packets between networks.
 - IPv4 is still dominant, but IPv6 is growing due to address exhaustion.
 - Packet Tracer lets you visualize IP routing and test connectivity.
+
+## DNS (DOMAIN NAME SYSTEM)
+### What Is DNS?
+DNS (Domain Name System) resolves domain names (like google.com) into IP addresses (like 142.250.190.14) so devices can locate each other on the internet or a local network.
+
+### Why DNS Matters
+- Humans remember names, not numbers.
+- DNS automates the translation of names to IPs.
+- Without DNS, you'd need to memorize IPs for every website or service.
+
+### Real-World Analogy
+Imagine calling a friend by name. Your phone uses a contact list (DNS) to find their number and make the call. DNS works the same way for computers.
+
+### Cisco Packet Tracer Simulation: DNS Resolution
+- Add 2 PCs and 1 Server
+- Connect all devices to a switch
+- Assign IPs:
+	- PC0: 192.168.1.10
+	- Server: 192.168.1.100
+- Configure Server:
+	- Click Server → Services → DNS
+	- Add a DNS entry: www.example.com → 192.168.1.100
+- Configure PC0:
+	- Desktop → IP Configuration
+	- Set DNS Server to 192.168.1.100
+- Test DNS:
+	- PC0 → Desktop → Web Browser
+	- Enter http://www.example.com
+	- If DNS is working, the page loads from the server
+- Optional Expansion
+	- Add multiple DNS entries
+	- Simulate DNS failure by removing the entry
+	- Use Simulation Mode to observe DNS request and response packets
+### Key Takeaways
+- DNS resolves names to IPs, enabling user-friendly access to services.
+- DNS servers store mappings and respond to client queries.
+- Packet Tracer lets you simulate DNS resolution and test web access via domain names.
+
+
 
