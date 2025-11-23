@@ -27,3 +27,8 @@ Imagine checking into a hotel. You don’t choose your room number — the recep
 - Configure PCs:
   - Desktop → IP Configuration → Select “DHCP”
   - IP will be assigned automatically
+
+## Key Takeaways
+- DHCP automates IP assignment, reducing errors and saving time
+- Can be configured on servers or routers
+- Packet Tracer lets you simulate both methods and observe IP allocation
