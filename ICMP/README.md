@@ -1,4 +1,10 @@
 ## ICMP (INTERNET CONTROL MESSAGE PROTOCOL)
+
+<div align = center>
+	<img width="601" height="270" alt="ICMP_Protocol" src="https://github.com/user-attachments/assets/614b75e6-744b-4649-bf93-d912ee38d79b" />
+</div>
+<br>
+
 - Concept: ICMP (Internet Control Message Protocol) is used for error reporting and diagnostics. Tools like ping and traceroute rely on it.
 - Analogy: Think of ICMP like a postal service “delivery receipt” – it tells you if your letter (packet) reached the destination or not.
 - Packet Tracer Lab:
