@@ -1,0 +1,15 @@
+## ICMP (INTERNET CONTROL MESSAGE PROTOCOL)
+- Concept: ICMP (Internet Control Message Protocol) is used for error reporting and diagnostics. Tools like ping and traceroute rely on it.
+- Analogy: Think of ICMP like a postal service “delivery receipt” – it tells you if your letter (packet) reached the destination or not.
+- Packet Tracer Lab:
+	- Place 2 PCs in Packet Tracer.
+	- Connect them with a switch.
+    - Assign IP addresses (e.g., PC1: 192.168.1.1, PC2: 192.168.1.2).
+  	- Use the ping command from PC1 to PC2.
+  	- Observe ICMP Echo Request and Echo Reply.
+- Visual Guide: [Click Here](https://www.youtube.com/watch?v=ebL2JIGcYw0).
+- Key Takeaway: ICMP doesn’t carry data—it just reports on the status of IP communication.
+	- ICMP is essential for troubleshooting — it helps you know if devices are reachable.
+	- Ping uses ICMP Echo Request and Echo Reply.
+	- ICMP doesn’t carry user data, just control messages.
+	- You can simulate ICMP easily in Packet Tracer with basic topology.
