@@ -1,4 +1,9 @@
 ## IP (INTERNET PROTOCOL) 
+
+<div align = center>
+	<img width="611" height="322" alt="IP_Protocol" src="https://github.com/user-attachments/assets/c0845819-1176-4164-b60f-c8980c1e6e3a" />
+</div>
+
 ## What is IP?
 IP (Internet Protocol) is responsible for addressing and routing packets between devices across networks. It ensures that data sent from one device reaches the correct destination.  
 **Key Concepts**
