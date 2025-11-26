@@ -34,3 +34,16 @@
 - Certificate Verification: Browser checks if the certificate is valid and trusted.
 - Key Exchange: Browser and server agree on encryption keys.
 - Secure Communication: All data is encrypted using symmetric encryption.
+
+## Difference Between HTTP and HTTPS
+
+
+| Aspect            | HTTP                                   | HTTPS                                  |
+|-------------------|----------------------------------------|----------------------------------------|
+| **Security**      | No encryption (data in plain text)    | Encrypted using SSL/TLS               |
+| **Port**          | 80                                    | 443                                    |
+| **Data Integrity**| Vulnerable to tampering              | Ensures integrity                     |
+| **Authentication**| None                                  | Server identity verified via certificate |
+| **Performance**   | Slightly faster (no encryption)      | Slight overhead due to encryption     |
+| **SEO Impact**    | Neutral                               | Preferred by search engines (ranking boost) |
+| **Use Case**      | Non-sensitive data                   | Sensitive data (login, payments)      |
